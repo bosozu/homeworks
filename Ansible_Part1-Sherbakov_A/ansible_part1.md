@@ -17,10 +17,10 @@ _3. Воспроизводимость. Инфраструктура всегд�
 
 **Выполните действия и приложите скриншоты действий.**
 
-1. ![Установка Ansible]()
-2. ![Настройка ВМ]()
-3. [inventory.yml]()
-4. ![Модуль Ping]()
+1. ![Установка Ansible](https://github.com/bosozu/homeworks/blob/main/Ansible_Part1-Sherbakov_A/images/task2-1.png)
+2. ![Настройка ВМ](https://github.com/bosozu/homeworks/blob/main/Ansible_Part1-Sherbakov_A/images/task2-2.png)
+3. [inventory.yml](https://github.com/bosozu/homeworks/blob/main/Ansible_Part1-Sherbakov_A/images/task2-3.png)
+4. ![Модуль Ping](https://github.com/bosozu/homeworks/blob/main/Ansible_Part1-Sherbakov_A/images/task2-4.png)
  
 ---
 
@@ -41,7 +41,7 @@ _6 хостов а значение serial будет 3, то ansible выпол
 
 **Выполните действия и приложите скриншоты запуска команд.**
 
-1. ![Установка пакета]()
-2. ![Проверка сервиса]() 
-3. ![Создание файла]()
- 
+1. ![Установка пакета](https://github.com/bosozu/homeworks/blob/main/Ansible_Part1-Sherbakov_A/images/task4-1.png)
+2. ![Проверка сервиса](https://github.com/bosozu/homeworks/blob/main/Ansible_Part1-Sherbakov_A/images/task4-2.png) 
+3. ![Создание файла](https://github.com/bosozu/homeworks/blob/main/Ansible_Part1-Sherbakov_A/images/task4-31.png)
+   ![](https://github.com/bosozu/homeworks/blob/main/Ansible_Part1-Sherbakov_A/images/task4-32.png) 
