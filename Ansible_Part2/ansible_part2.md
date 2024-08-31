@@ -8,7 +8,7 @@
 
 1. Cкачать какой-либо архив, создать папку для распаковки и распаковать скаченный архив. Например, можете использовать официальный сайт и зеркало Apache Kafka. При этом можно скачать как исходный код, так и бинарные файлы, запакованные в архив — в нашем задании не принципиально.  
    [Плейбук 1](https://github.com/bosozu/homeworks/blob/main/Ansible_Part2/playbook-task1_1.yml)  
-   ![Вывод плейбука](https://github.com/bosozu/homeworks/blob/main/Ansible_Part2/images/task1-1.png)
+   ![Вывод плейбука](https://github.com/bosozu/homeworks/blob/main/Ansible_Part2/images/task1_1.png)
 
 2. Установить пакет tuned из стандартного репозитория вашей ОС. Запустить его, как демон — конфигурационный файл systemd появится автоматически при установке. Добавить tuned в автозагрузку.  
    [Плейбук 2](https://github.com/bosozu/homeworks/blob/main/Ansible_Part2/playbook-task1_2.yml)
@@ -44,13 +44,13 @@
 
 В качестве решения:
 - предоставьте плейбук, использующий роль;  
-[Плейбук]()
+[Плейбук](https://github.com/bosozu/homeworks/blob/main/Ansible_Part2/playbook-task3.yml)
 
 - разместите архив созданной роли у себя на Google диске и приложите ссылку на роль в своём решении;  
-[Роль]()
+[Роль](https://github.com/bosozu/homeworks/tree/main/Ansible_Part2/roles/task3)
 
 - предоставьте скриншоты выполнения плейбука;  
-![Выполнение плейбука]()
+![Выполнение плейбука](https://github.com/bosozu/homeworks/blob/main/Ansible_Part2/images/task3-1.png)
 
 - предоставьте скриншот браузера, отображающего сконфигурированный index.html в качестве сайта.  
-![Скриншот браузера]()
+![Скриншот браузера](https://github.com/bosozu/homeworks/blob/main/Ansible_Part2/images/task3-2.png)
