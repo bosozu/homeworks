@@ -12,7 +12,7 @@
 
 2. Установить пакет tuned из стандартного репозитория вашей ОС. Запустить его, как демон — конфигурационный файл systemd появится автоматически при установке. Добавить tuned в автозагрузку.  
    [Плейбук 2](https://github.com/bosozu/homeworks/blob/main/Ansible_Part2/playbook-task1_2.yml)
-   ![Вывод плуйбука2](https://github.com/bosozu/homeworks/blob/main/Ansible_Part2-Sherbakov_A/images/task1-2.png)
+   ![Вывод плeйбука2](https://github.com/bosozu/homeworks/blob/main/Ansible_Part2/images/task1-2.png)
 
 3. Изменить приветствие системы (motd) при входе на любое другое. Пожалуйста, в этом задании используйте переменную для задания приветствия. Переменную можно задавать любым удобным способом.
    [Плейбук 3](https://github.com/bosozu/homeworks/blob/main/Ansible_Part2/playbook-task1_3.yml)
