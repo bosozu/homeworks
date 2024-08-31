@@ -1,0 +1,28 @@
+- name: Change motd
+  become: yes
+  hosts: servers
+  vars:
+    TASK2: This is cumtom message from ansible part2 task 2
+
+  tasks:
+    - name: disable all parts motd (chmod files)
+      ansible.builtin.file:
+        path: /etc/update-motd.d
+        state: directory
+        recurse: yes
+        mode: '0644'
+    
+    - name: copy custom motd file
+      ansible.builtin.copy:
+        src: ./data/01-custom-motd
+        dest: /etc/update-motd.d/01-custom-motd
+        mode: '0755'
+    
+    - name: add my text in motd file
+      ansible.builtin.blockinfile:
+        path: /etc/update-motd.d/01-custom-motd
+        block: |
+          echo This is custom message from {{ TASK2 }}
+          echo This hostname is {{ ansible_facts['nodename'] }}
+          echo This IP':' {{ ansible_facts ['default_ipv4']['address'] }}
+        

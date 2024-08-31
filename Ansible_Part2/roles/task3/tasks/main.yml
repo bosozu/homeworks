@@ -1,0 +1,39 @@
+---
+- name: update system
+  ansible.builtin.apt:
+   update_cache: yes
+
+- name: install apache2
+  ansible.builtin.apt:
+    name: apache2
+    state: present
+
+- name: copy index.html
+  ansible.builtin.template:
+    src: ../files/index.html.j2
+    dest: /var/www/html/index.html
+  changed_when: True
+  notify: restart apache2
+
+- name: open 80 port
+  ansible.builtin.iptables:
+    chain: INPUT
+    protocol: tcp
+    destination_port: 80
+    jump: ACCEPT
+
+- name: start apache2
+  ansible.builtin.service:
+    name: apache2
+    state: started
+    enabled: true
+
+- name: check connect to servers
+  ansible.builtin.uri:
+    url: http://{{ ip }}
+    method: GET
+    return_content: yes
+  register: response
+
+- ansible.builtin.debug:
+    var: response.status

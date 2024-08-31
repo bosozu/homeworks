@@ -1,0 +1,6 @@
+---
+# defaults file for task4
+cpu: "{{ ansible_facts['processor'][2] }}"
+ip: "{{ ansible_facts ['default_ipv4']['address'] }}"
+ram: "{{ ansible_facts['memtotal_mb'] }}"
+hdd: "{{ ansible_facts['devices']['sda']['size'] }}"

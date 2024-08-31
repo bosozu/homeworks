@@ -1,0 +1,5 @@
+- name: launch role task3 (install apache2)
+  hosts: servers
+  become: true
+  roles: 
+    - task3

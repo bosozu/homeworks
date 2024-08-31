@@ -1,0 +1,14 @@
+- name: Download and unpacking archive
+  become: yes
+  hosts: servers
+  tasks:
+    - name: download archive
+      ansible.builtin.uri:
+        url: https://downloads.apache.org/kafka/3.8.0/kafka-3.8.0-src.tgz
+        dest: /tmp/
+
+    - name: unpacking archive
+      ansible.builtin.unarchive:
+        src: /tmp/kafka-3.8.0-src.tgz
+        dest: /tmp/
+        remote_src: true

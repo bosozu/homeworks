@@ -1,0 +1,6 @@
+servers:
+  hosts:
+    server1:
+      ansible_host: 192.168.0.105
+#    server2:
+#      ansible_host: 192.168.0.117

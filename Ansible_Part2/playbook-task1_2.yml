@@ -1,0 +1,19 @@
+- name: Install tuned package
+  become: yes
+  hosts: servers
+  tasks:
+    - name: apt update
+      ansible.builtin.apt:
+        update-cache: true
+
+    - name: install tuned package
+      ansible.builtin.apt:
+        name: tuned
+        state: present
+    
+    - name: start service
+      ansible.builtin.service:
+        name: tuned
+        state: started
+        enabled: true
+

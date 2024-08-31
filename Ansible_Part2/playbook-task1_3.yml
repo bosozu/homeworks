@@ -1,0 +1,25 @@
+- name: Change motd
+  become: yes
+  hosts: servers   
+  vars:
+        TASK13: This is custom message from ansible part2 task 1.3
+
+  tasks:
+    - name: disable all parts motd (chmod files)
+      ansible.builtin.file:
+        path: /etc/update-motd.d
+        state: directory
+        recurse: yes
+        mode: '0644'
+    
+    - name: copy custom motd file
+      ansible.builtin.copy:
+        src: ./data/01-custom
+        dest: /etc/update-motd.d/01-custom
+        mode: '0755'
+
+    - name: add my text in motd file
+      ansible.builtin.lineinfile:
+        path: /etc/update-motd.d/01-custom
+        line: echo "{{ TASK13 }}"
+        insertafter: EOF
