@@ -40,9 +40,9 @@
 * внешний IP-адрес машины, полученный из output external_ip_ address_vm_1, в файле hosts;
 * доступ в файле plabook *yml поля hosts.
 
-![Запуск вм]()
+![Запуск вм](https://github.com/bosozu/homeworks/blob/main/Terraform/images/task1-1.png)
 ![Тестовая страница]()
-[Плейбук]()
+[Плейбук](https://github.com/bosozu/homeworks/blob/main/Terraform/playbook-test/0703play.yml)
 
 ---
 
