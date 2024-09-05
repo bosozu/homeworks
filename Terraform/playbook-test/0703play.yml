@@ -1,0 +1,14 @@
+- include_vars: ip.yml
+
+- hosts: "{{ host_ip }}"
+  remote_user: user
+  tasks:
+    - ansible.builtin.service:
+        name: nginx
+        state: started
+      become: yes
+      become_method: sudo
+    - name: copy index.html
+      ansible.builtin.copy:
+        src: /home/user/LEARN/homeworks/Terraform/playbook-test/data/index.html
+        dest: /var/www/html/index.html

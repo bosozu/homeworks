@@ -1,3 +1,8 @@
 ./Ansible_Part1/ansible.cfg
 ./Ansible_Part2/ansible.cfg
-
+./Terraform/meta
+./Terraform/.terraform
+./Terraform/terraform.tfstate
+./Terraform/.terraform.lock.hcl
+./Terraform/terraform.tfstate.backup
+./Terraform/playbook-test/ip.yml

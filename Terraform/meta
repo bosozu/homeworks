@@ -1,0 +1,7 @@
+users:
+  - name: users
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL'=(ALL) NOPASSWD:ALL']
+    ssh-authorized-keys:
+      - ssh-rsa /home/user/.ssh/id_ed25519.pub
