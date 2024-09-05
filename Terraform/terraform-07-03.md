@@ -68,11 +68,4 @@
 3. Выполните команду export YC_TOKEN=$(yc iam create-token) и в том же shell запустите terraform.
 4. Для того чтобы вам не нужно было каждый раз выполнять export - добавьте данную команду в самый конец файла ~/.bashrc
 
----
-
-Дополнительные материалы:
-
-1. [Nginx. Руководство для начинающих](https://nginx.org/ru/docs/beginners_guide.html).
-2. [Руководство по Terraform](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/doc).
-3. [Ansible User Guide](https://docs.ansible.com/ansible/latest/user_guide/index.html).
-4. [Terraform Documentation](https://www.terraform.io/docs/index.html).
+_Это задание я выполнил, т.к. сразу сделал по гайду яндекса добавление токена и файле main.tf уже отсутствует переменная с токеном_
