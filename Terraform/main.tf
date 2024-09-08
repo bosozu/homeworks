@@ -32,9 +32,9 @@ resource "yandex_compute_instance" "hm-vm1" {
         subnet_id = "e9b4u5p5ieklbj6r3f87"
         nat       = true
     }
-
+    
     metadata = {
-        user-data = "${file("./meta")}"
+        user-data = "${file("./meta.txt")}"
     }
 }
 

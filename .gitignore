@@ -1,6 +1,6 @@
 ./Ansible_Part1/ansible.cfg
 ./Ansible_Part2/ansible.cfg
-./Terraform/meta
+./Terraform/meta.txt
 ./Terraform/.terraform
 ./Terraform/terraform.tfstate
 ./Terraform/.terraform.lock.hcl

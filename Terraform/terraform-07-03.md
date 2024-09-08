@@ -41,7 +41,7 @@
 * доступ в файле plabook *yml поля hosts.
 
 ![Запуск вм](https://github.com/bosozu/homeworks/blob/main/Terraform/images/task1-1.png)
-![Тестовая страница]()
+![Тестовая страница](https://github.com/bosozu/homeworks/blob/main/Terraform/images/task1-2.png)
 [Плейбук](https://github.com/bosozu/homeworks/blob/main/Terraform/playbook-test/0703play.yml)
 
 ---

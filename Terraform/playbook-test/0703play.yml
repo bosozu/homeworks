@@ -1,7 +1,6 @@
-- include_vars: ip.yml
-
-- hosts: "{{ host_ip }}"
+- hosts: servers
   remote_user: user
+  become: yes
   tasks:
     - ansible.builtin.service:
         name: nginx
