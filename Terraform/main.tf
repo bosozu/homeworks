@@ -24,7 +24,31 @@ resource "yandex_compute_instance" "hm-vm1" {
 
     boot_disk {
         initialize_params {
-            image_id = "fd8btqg2mh540ftne9p4"
+            image_id = "fd8o6khjbdv3f1suqf69"
+        }
+    }
+
+    network_interface {
+        subnet_id = "e9b4u5p5ieklbj6r3f87"
+        nat       = true
+    }
+    
+    metadata = {
+        user-data = "${file("./meta.txt")}"
+    }
+}
+
+resource "yandex_compute_instance" "hm-vm2" {
+    name = "homework1-1"
+
+    resources {
+        cores = 2
+        memory = 2
+    }
+
+    boot_disk {
+        initialize_params {
+            image_id = "fd8o6khjbdv3f1suqf69"
         }
     }
 

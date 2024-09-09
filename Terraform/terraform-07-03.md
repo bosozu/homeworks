@@ -58,6 +58,9 @@
 2. Установить на вторую виртуальную машину базу данных.
 3. Выполнить проверку состояния запущенных служб через Ansible.
 
+![вм1](https://github.com/bosozu/homeworks/blob/main/Terraform/images/task2-1.png)
+![вм2](https://github.com/bosozu/homeworks/blob/main/Terraform/images/task2-2.png)
+
 ### Задание 3*
 
 Изучите [инструкцию](https://cloud.yandex.ru/docs/tutorials/infrastructure-management/terraform-quickstart) yandex для terraform.

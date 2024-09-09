@@ -1,13 +1,41 @@
-- hosts: servers
+- hosts: webservers
   remote_user: user
   become: yes
+  become_method: sudo
   tasks:
+    -  ansible.builtin.apt:
+        name: nginx
+        state: present
+        update_cache: yes
     - ansible.builtin.service:
         name: nginx
         state: started
-      become: yes
-      become_method: sudo
+        enabled: True
+      register: nginx_service
     - name: copy index.html
       ansible.builtin.copy:
         src: /home/user/LEARN/homeworks/Terraform/playbook-test/data/index.html
         dest: /var/www/html/index.html
+    - name: debug message
+      ansible.builtin.debug:
+        msg: '{{ nginx_service }}'
+
+
+- hosts: database
+  remote_user: user
+  become: yes
+  become_method: sudo
+  tasks:
+    - ansible.builtin.apt:
+        name:
+          - postgresql 
+          - postgresql-contrib
+        state: present
+        update_cache: yes
+    - ansible.builtin.service:
+        name: postgresql
+        state: started
+        enabled: true
+      register: postgresql_service
+    - ansible.builtin.debug:
+        msg: '{{ postgresql_service }}'
