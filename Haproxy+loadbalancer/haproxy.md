@@ -45,16 +45,10 @@
 - Настройте Nginx так, чтобы файлы .jpg выдавались самим Nginx (предварительно разместите несколько тестовых картинок в директории /var/www/), а остальные запросы переадресовывались на HAProxy, который в свою очередь переадресовывал их на два Simple Python server.
 - На проверку направьте конфигурационные файлы nginx, HAProxy, скриншоты с запросами jpg картинок и других файлов на Simple Python Server, демонстрирующие корректную настройку.
 
+[nginx конфиг, измененный default файл](https://github.com/bosozu/homeworks/blob/main/Haproxy+loadbalancer/cfg/nginx-ts3)
+[haproxy.cfg](https://github.com/bosozu/homeworks/blob/main/Haproxy+loadbalancer/cfg/haproxy-t1.cfg)
+![img](https://github.com/bosozu/homeworks/blob/main/Haproxy+loadbalancer/images/task3-1.png)
+![balancer1](https://github.com/bosozu/homeworks/blob/main/Haproxy+loadbalancer/images/task3-2.png)
+![balancer2](https://github.com/bosozu/homeworks/blob/main/Haproxy+loadbalancer/images/task3-2.png)
+
 ---
-
-### Задание 4*
-
-- Запустите 4 simple python сервера на разных портах.
-- Первые два сервера будут выдавать страницу index.html вашего сайта example1.local (в файле index.html напишите example1.local)
-- Вторые два сервера будут выдавать страницу index.html вашего сайта example2.local (в файле index.html напишите example2.local)
-- Настройте два бэкенда HAProxy
-- Настройте фронтенд HAProxy так, чтобы в зависимости от запрашиваемого сайта example1.local или example2.local запросы перенаправлялись на разные бэкенды HAProxy
-- На проверку направьте конфигурационный файл HAProxy, скриншоты, демонстрирующие запросы к разным фронтендам и ответам от разных бэкендов.
-
-
-------
